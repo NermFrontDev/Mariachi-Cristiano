@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { GalleryLightboxComponent } from './components/gallery-lightbox/gallery-lightbox.component';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 import { IntersectionObserverDirective } from './directives/intersection.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
-import { ReactiveFormsModule } from '@angular/forms';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PhoneFormatterDirective } from './directives/phone-formatter.directive';
+import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,10 @@ import { PhoneFormatterDirective } from './directives/phone-formatter.directive'
     BrowserModule,
     PhotoGalleryModule.forRoot({ defaultOptions: { showHideOpacity: true } }),
     ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

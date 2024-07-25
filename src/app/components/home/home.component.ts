@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 interface Item {
   imageSrc: string;
@@ -19,9 +21,22 @@ export class HomeComponent {
     this.sectionVisible.emit({ sectionId, isVisible });
   }
 
+  recaptchaResponse: string | null = null;
+
+  resolved(captchaResponse: string | null) {
+    this.recaptchaResponse = captchaResponse;
+    if (captchaResponse) {
+      console.log(`Resolved captcha with response: ${captchaResponse}`);
+    } else {
+      console.log('Captcha response is null');
+    }
+  }
+
   contactForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private router: Router) {}
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({
@@ -33,14 +48,37 @@ export class HomeComponent {
   }
 
   onSubmit(): void {
-    if (this.contactForm.valid) {
-      console.log('Form Data:', this.contactForm.value);
-      // Aquí puedes manejar la lógica de envío de datos
+    if (this.contactForm.valid && this.recaptchaResponse) {
+      const formValue = this.contactForm.value;
+
+      const templateParams = {
+        fullName: formValue.fullName,
+        phone: formValue.phone,
+        email: formValue.email,
+        message: formValue.message
+      };
+
+      emailjs.send('service_t918cwc', 'template_r1o3zlg', templateParams, 'UYVWrR-1uLhfGT8LJ')
+        .then((result: EmailJSResponseStatus) => {
+          console.log('Correo enviado:', result.text);
+        }, (error) => {
+          console.log('Error al enviar el correo:', error.text);
+        });
     } else {
-      console.log('Form not valid');
+      console.log('Formulario no válido o el reCaptcha no fué valido');
     }
+
+    //reset form
+    this.onReset();
+
   }
 
+  onReset() {
+    this.contactForm.reset();
+    setTimeout(() => {
+      this.router.navigate(['/']);
+    }, 2000);
+  }
   imgUrl: string = 'assets/images/home/img-gallery';
 
   data: Item[] = [

@@ -1,10 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-navbar">
   <div class="container my-lg-1 my-0">
     <a class="navbar-brand" [routerLink]="['/']">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon"></span> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
       <i class="bi bi-list-nested text-white fs-2"></i>
     </button>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list-nested text-white fs-2"></i>
+    </button> -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
       <ul class="navbar-nav align-items-center">
         <li class="nav-item">
@@ -28,3 +30,95 @@
     </div>
   </div>
 </nav>
+
+<!-- Offcanvas mobile -->
+<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header justify-content-end">
+    <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5> -->
+    <button class="close-canvas" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="bi bi-x-lg text-white"></i>
+    </button>
+    <!-- <button class="btn btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="bi bi-x-lg text-white"></i>
+    </button> -->
+  </div>
+  <div class="offcanvas-body">
+    <div class="sidebar">
+      <div>
+        <nav>
+          <ul class="navbar-nav d-flex align-items-center gap-3">
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="navlink" href="#hero-banner" [class.active]="activeSection === 'hero-banner'">Inicio</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="navlink" href="#about-us" [class.active]="activeSection === 'about-us'"
+                [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Nosotros</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="navlink" href="#services" [class.active]="activeSection === 'services'"
+              [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Servicios</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="navlink" href="#gallery" [class.active]="activeSection === 'gallery'"
+              [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Galería</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="navlink" href="#contact" [class.active]="activeSection === 'contact'"
+              [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="line d-flex flex-column align-items-center my-4">
+      <span class="line-height"></span>
+    </div>
+    <div class="social-media-container">
+      <div class="social-content d-flex flex-column align-items-center justify-content-center gap-4">
+        <a class="nav-link active d-flex flex-column gap-2 align-items-center justify-content-center" href="tel:951-161-7127">
+          <div>
+            <img class="img-icon" src="assets/images/icons/solid_phone.svg" alt="Phone icon">
+          </div>
+          <div class="text-center">
+            <span class="separated-text">951-161-7127</span>
+          </div>
+        </a>
+        <a class="nav-link d-flex flex-column gap-2 align-items-center justify-content-center" href="" target="_blank">
+          <div>
+            <img class="img-icon" src="assets/images/icons/solid_whatsapp.svg" alt="Phone icon">
+          </div>
+          <div class="text-center">
+            <span class="separated-text small-text">Atención por Whatsapp</span>
+          </div>
+        </a>
+        <a class="nav-link d-flex flex-column gap-2 align-items-center justify-content-center" href="https://www.facebook.com/profile.php?id=100032453152247" target="_blank">
+          <div>
+            <img class="img-icon" src="assets/images/icons/solid_facebook.svg" alt="Phone icon">
+          </div>
+          <div class="text-center">
+            <span class="separated-text">Visítanos en Facebook</span>
+          </div>
+        </a>
+      </div>
+      <!-- <ul class="text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active d-flex flex-row gap-2 align-items-center justify-content-center" aria-current="page" href="tel:951-161-7127">
+            <img class="img-icon" src="assets/images/icons/solid_phone.svg" alt="Phone icon">
+            <span class="separated-text">951-161-7127</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex flex-row gap-2 align-items-center justify-content-center" aria-current="page" href="" target="_blank">
+            <img class="img-icon" src="assets/images/icons/solid_whatsapp.svg" alt="Phone icon">
+            <span class="separated-text small-text">Atención por Whatsapp</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100032453152247" target="_blank">
+            <img class="img-icon" src="assets/images/icons/solid_facebook.svg" alt="Phone icon">
+          </a>
+        </li>
+      </ul> -->
+    </div>
+  </div>
+</div>

@@ -85,7 +85,7 @@
         ¡Pregunta por ellos!</p>
     </div>
     <div
-      class="items-services d-flex flex-row flex-wrap align-items-center justify-content-between col-10 col-lg-6 gap-3">
+      class="items-services d-flex flex-row flex-wrap align-items-center justify-content-center justify-content-lg-between gap-4 col-12 col-lg-6 gap-lg-3">
       <!-- First Column -->
       <a
         class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
@@ -232,13 +232,16 @@
             Correo electrónico es requerido y debe ser válido.
           </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-2">
           <label for="inputMessage" class="form-label">Mensaje:</label>
           <textarea class="form-control" id="inputMessage" formControlName="message" rows="3" placeholder="Su mensaje aquí"></textarea>
           <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
             Mensaje es requerido.
           </div>
         </div>
+        <re-captcha
+          class="mb-2"
+          (resolved)="resolved($event)" siteKey="6Lc9hRgqAAAAAIFO03apsqmZ009-wEJWF7HvcdPM"></re-captcha>
         <div class="d-grid">
           <button class="btn btn-primary" type="submit" [disabled]="contactForm.invalid">Enviar</button>
         </div>
