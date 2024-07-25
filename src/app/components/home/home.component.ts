@@ -41,25 +41,27 @@ export class HomeComponent {
     }
   }
 
+  imgUrl: string = 'assets/images/home/img-gallery';
+
   data: Item[] = [
     {
-      imageSrc: '/assets/images/home/img-gallery/img_1.png',
+      imageSrc: `${this.imgUrl}/img_1.png`,
       imageAlt: '1'
     },
     {
-      imageSrc: '/assets/images/home/img-gallery/img_2.png',
+      imageSrc: `${this.imgUrl}/img_2.png`,
       imageAlt: '2'
     },
     {
-      imageSrc: '/assets/images/home/img-gallery/img_3.png',
+      imageSrc: `${this.imgUrl}/img_3.png`,
       imageAlt: '3'
     },
     {
-      imageSrc: '/assets/images/home/img-gallery/img_4.png',
+      imageSrc: `${this.imgUrl}/img_4.png`,
       imageAlt: '4'
     },
     {
-      imageSrc: '/assets/images/home/img-gallery/img_5.png',
+      imageSrc: `${this.imgUrl}/img_5.png`,
       imageAlt: '5'
     }
   ]
