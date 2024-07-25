@@ -1,0 +1,24 @@
+@import url(../../../styles.scss);
+
+.copyrights-container p,
+  .site-name-container p {
+    font-family: var(--font-lato-regular);
+    font-size: 15px;
+  }
+
+.logo-site img {
+  width: 90px;
+  height: auto;
+  filter: invert(1);
+}
+
+@media (max-width: 575.98px) {
+  .copyrights-container p,
+  .site-name-container p {
+    font-size: 14px;
+  }
+
+  .logo-site img {
+    width: 150px;
+  }
+}

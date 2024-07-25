@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mariachi-website';
+
+  activeSection: string = '';
+
+  onSectionVisible(sectionId: string, isVisible: boolean): void {
+    if (isVisible) {
+      this.activeSection = sectionId;
+    }
+  }
 }

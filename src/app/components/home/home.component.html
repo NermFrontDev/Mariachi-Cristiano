@@ -1,0 +1,274 @@
+<!-- Hero-Banner Section Start -->
+<section class="section-hero-banner" id="hero-banner" appIntersectionObserver
+  (visible)="onSectionVisible('hero-banner', $event)">
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+    <div
+      class="hero-content d-flex flex-column align-items-lg-start align-items-center justify-content-center gap-3 col">
+      <div>
+        <h1 class="title-mariachi text-lg-start text-center">MARIACHI <span class="title-bold">CRISTIANO CÁNTICOS AL
+            REY</span><br> DE OAXACA</h1>
+      </div>
+      <div>
+        <p class="description-mariachi text-lg-start text-center">
+          Somos un<span class="title-bold-lato"> grupo de mariachi cristiano</span> con más de 20 años de experiencia,
+          ubicados en la ciudad de Oaxaca de Juárez, Oaxaca. En <span class="title-bold-lato"> MARIACHI CRISTIANO
+            CÁNTICOS AL REY</span> ofrecemos nuestra música para el pueblo de Dios.
+        </p>
+      </div>
+      <div class="cta-button d-flex flex-row gap-3 align-items-center">
+        <button>Contáctanos</button>
+        <a href="#about-us" class="link-more text-decoration-none text-white">
+          <span class="text-decoration-underline">Saber más</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image col-lg-6 col-12 text-center">
+      <img src="assets/images/home/img_hero-banner.png" alt="Mariachi hero-banner image">
+    </div>
+  </div>
+</section>
+<!-- Hero-Banner Section End -->
+
+<!-- AboutUs Section Start -->
+<section class="section-about-us container-fluid p-0 d-flex flex-column-reverse flex-lg-row mt-lg-2 mt-0" id="about-us"
+  appIntersectionObserver (visible)="onSectionVisible('about-us', $event)">
+  <div class="container-fluid about-image p-0">
+    <img src="/assets/images/home/img_about-us.png" alt="About us image">
+  </div>
+  <div class="container about-content d-flex flex-column gap-4 justify-content-center">
+    <div class="about-titles-container d-flex flex-column gap-2 gap-lg-1">
+      <img src="/assets/images/icons/solid_music.svg" alt="Music icon">
+      <h2 class="m-0">Música para el<br>pueblo de Dios</h2>
+      <p class="m-0">Servicio las 24 horas</p>
+    </div>
+    <div class="about-description-container d-flex flex-column gap-3 col-lg-8 col-12">
+      <p class="m-0">Nuestro repertorio contiene un <span class="text-bold">mensaje diferente</span> de Amor, Paz y
+        Alabanza, y estamos enfocados exclusivamente a <span class="text-bold">eventos cristianos.</span>
+      </p>
+      <a href="#more-info" class="link-more text-decoration-none text-white">
+        <span class="text-decoration-underline">Saber más</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- AboutUs Section End -->
+
+<!-- MoreInfo Section Start -->
+<section class="section-more-info container-fluid" id="more-info">
+  <div class="container more-info-content d-flex flex-column align-items-center justify-content-center gap-4 gap-lg-3">
+    <div class="titles-info d-flex flex-column align-items-center justify-content-center gap-2 gap-lg-1">
+      <p class="m-0">Los mejores beneficios para tu evento</p>
+      <h3 class="m-0">Brindamos lo mejor para cada ocasión</h3>
+    </div>
+    <div class="description-info d-flex flex-column align-items-center justify-content-center gap-4 gap-lg-3">
+      <p class="m-0 text-start text-lg-center">Contamos con vocalistas de ambos sexos, utilizamos variedad de voces.
+        Además, usamos el traje tradicional de mariachi. Contrata el mejor plan de acuerdo a tus necesidades.<br>Algunos
+        de nuestros instrumentos: guitarrón, vihuela, violines, trompeta, etc.</p>
+      <a href="#" class="link-more text-decoration-none text-white">
+        <span class="text-decoration-underline">Saber más</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- MoreInfo Section End -->
+
+<!-- Services Section Start -->
+<section class="section-services container-fluid py-5" id="services" appIntersectionObserver
+  (visible)="onSectionVisible('services', $event)">
+  <div class="container my-5 d-flex flex-column align-items-center justify-content-center gap-5">
+    <div class="titles-services d-flex flex-column align-items-center justify-content-center gap-3">
+      <h3 class="m-0  text-start text-lg-center">Eventos cristianos que cubrimos</h3>
+      <p class="m-0 text-start text-lg-center">La cobertura de nuestros servicios es a nivel nacional, podemos ir a
+        cualquier punto dentro y afuera de la ciudad. Manejamos diferentes paquetes de acuerdo con tus necesidades.
+        ¡Pregunta por ellos!</p>
+    </div>
+    <div
+      class="items-services d-flex flex-row flex-wrap align-items-center justify-content-between col-10 col-lg-6 gap-3">
+      <!-- First Column -->
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image1 d-flex align-items-center justify-content-center">
+          <h3>Bodas</h3>
+        </div>
+      </a>
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image2 d-flex align-items-center justify-content-center">
+          <h3>Celebraciones</h3>
+        </div>
+      </a>
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image3 d-flex align-items-center justify-content-center">
+          <h3>XV Años</h3>
+        </div>
+      </a>
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image4 d-flex align-items-center justify-content-center">
+          <h3>Cumpleaños</h3>
+        </div>
+      </a>
+      <!-- Second Column -->
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image5 d-flex align-items-center justify-content-center">
+          <h3>Cepelios</h3>
+        </div>
+      </a>
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image6 d-flex align-items-center justify-content-center">
+          <h3>Campañas</h3>
+        </div>
+      </a>
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image7 d-flex align-items-center justify-content-center">
+          <h3>Sorpresas</h3>
+        </div>
+      </a>
+      <a
+        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
+        <div class="item-card_image image8 d-flex align-items-center justify-content-center">
+          <h3>Convivios Familiares</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Quote Section Start -->
+<section class="container-fluid section-quote py-5" id="quote">
+  <div
+    class="container quote-container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between pt-5 col-lg-8">
+    <div class="quote-img text-center">
+      <img src="/assets/images/home/img_quote.png" alt="Quote image">
+    </div>
+    <div class="quote-content text-center text-lg-end col-lg-8">
+      <h4>"Compartimos nuestra pasión por la música y nuestra fe, llevando alegría y esperanza a cada celebración con
+        nuestro mariachi cristiano."</h4>
+    </div>
+  </div>
+</section>
+<!-- Quote Section End -->
+
+
+<!-- Gallery Section Start -->
+<section class="container-fluid section-gallery pt-5" id="gallery"
+  appIntersectionObserver (visible)="onSectionVisible('gallery', $event)">
+  <div class="container titles-gallery d-flex flex-column align-items-lg-center justify-content-center gap-2 gap-lg-1 pb-5">
+    <p class="m-0">Galería de recuerdos</p>
+    <h3 class="m-0">Nuestras participaciones en eventos</h3>
+  </div>
+  <!-- class="container" -->
+  <app-gallery-lightbox
+    [galleryData]="data"
+    [showCount]="true">
+  </app-gallery-lightbox>
+</section>
+<!-- Gallery Section End -->
+
+<!-- Banner Section Start -->
+<section class="container-fluid section-banner d-flex align-items-center justify-content-center my-5" id="banner">
+  <div class="container banner-container d-flex align-items-center justify-content-center">
+    <h4 class="m-0 text-center text-lg-start">Promoción: Pregunta por nuestras promociones de 2 a 5 horas contratadas en adelante</h4>
+  </div>
+</section>
+<!-- Banner Section End -->
+
+<!-- Contact Section Start -->
+<section class="container-fluid py-2 py-lg-5" id="contact"
+  appIntersectionObserver (visible)="onSectionVisible('contact', $event)">
+  <div class="container d-flex flex-column flex-lg-row col-lg-10 align-items-center justify-content-center gap-5 py-2 py-lg-3 my-3">
+    <div class="map-container d-flex flex-column align-items-center justify-content-end">
+      <div class="data-container mb-4">
+        <div class="d-flex flex-column align-items-center justify-content-between gap-4 py-4 col-10 col-lg-12">
+          <div class="col-10 col-lg-11 d-flex flex-column gap-2">
+            <h5 class="m-0 title-data-contact">Dirección</h5>
+            <p class="m-0 desc-data-contact">Priv. Reforma 103 Presidente Juarez,
+              Oaxaca de Juarez, Oaxaca C.P. 68146</p>
+          </div>
+          <div class="d-flex flex-column flex-lg-row align-items-start gap-4 col-10 col-lg-11">
+            <div class="d-flex flex-column gap-2">
+              <h5 class="m-0 title-data-contact">Teléfono</h5>
+              <p class="m-0 desc-data-contact">951-161-7127</p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <h5 class="m-0 title-data-contact">Correo Electrónico</h5>
+              <a class="link-contact" [routerLink]="['/']">
+                <p class="m-0 desc-data-contact">davidhernandezmesinas79@gmail.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.0279478874577!2d-96.72360922406473!3d17.07128558376302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7223b3e17232f%3A0x50f5a4df81ea1158!2sPriv.%20de%20Reforma%20103%2C%20RUTA%20INDEPENDENCIA%2C%20Centro%2C%2068146%20Oaxaca%20de%20Ju%C3%A1rez%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1721844217776!5m2!1ses-419!2smx" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="form-container col-lg-5">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="row gap-4">
+        <h3 class="m-0 title-contact">Contrata nuestro grupo de mariachi cristiano <span class="text-bold-contact"> ¡Llámanos!</span></h3>
+        <div class="col-12 mb-2">
+          <label for="inputName" class="form-label">Nombre completo:</label>
+          <input type="text" class="form-control" id="inputName" formControlName="fullName" placeholder="Nombre y apellidos">
+          <div *ngIf="contactForm.get('fullName')?.invalid && contactForm.get('fullName')?.touched" class="text-danger">
+            Nombre es requerido.
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <label for="inputPhone" class="form-label">Teléfono:</label>
+          <input type="text" class="form-control" id="inputPhone" formControlName="phone" placeholder="123 456 7890" minlength="12" maxlength="12" appPhoneFormatter>
+          <div *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched" class="text-danger">
+            Teléfono es requerido y debe seguir el formato 123 456 7890.
+          </div>
+        </div>
+        <div class="col-12 mb-2">
+          <label for="inputAddress" class="form-label">Correo Electrónico:</label>
+          <input type="text" class="form-control" id="inputAddress" formControlName="email" placeholder="Ejemplo@gmail.com">
+          <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+            Correo electrónico es requerido y debe ser válido.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="inputMessage" class="form-label">Mensaje:</label>
+          <textarea class="form-control" id="inputMessage" formControlName="message" rows="3" placeholder="Su mensaje aquí"></textarea>
+          <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
+            Mensaje es requerido.
+          </div>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit" [disabled]="contactForm.invalid">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Methods Section Start -->
+<section class="container-fluid">
+  <div class="container d-flex align-items-center justify-content-center mb-5">
+    <div class="col-4 d-flex align-items-center justify-content-center gap-3 my-5">
+      <div class="method-container d-flex flex-column align-items-center justify-content-between gap-2">
+        <img class="img-method" src="/assets/images/payment-icons/solid_cash.svg" alt="Method Payment Cash">
+        <p class="m-0">Efectivo</p>
+      </div>
+      <div class="method-container d-flex flex-column align-items-center justify-content-between gap-2">
+        <img class="img-method" src="/assets/images/payment-icons/solid_visa.svg" alt="Method Payment Visa">
+        <p class="m-0">Visa</p>
+      </div>
+      <div class="method-container d-flex flex-column align-items-center justify-content-between gap-2">
+        <img class="img-method" src="/assets/images/payment-icons/solid_mastercard.svg" alt="Method Payment Mastercard">
+        <p class="m-0">Mastercard</p>
+      </div>
+      <div class="method-container d-flex flex-column align-items-center justify-content-between gap-2">
+        <img class="img-method" src="/assets/images/payment-icons/solid_transfer.svg" alt="Method Payment Transfer">
+        <p class="m-0">Transfer</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Methods Section End -->
+
+

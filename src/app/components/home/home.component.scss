@@ -1,0 +1,446 @@
+@import url(./../../../styles.scss);
+
+/* Section Banner Start */
+.section-hero-banner {
+  padding-top: 3.5em;
+}
+
+.hero-content {
+  .title-mariachi {
+    color: var(--gold-color);
+    font-family: var(--font-lora);
+    font-size: 58px;
+    font-weight: 100;
+  }
+  .title-bold {
+    font-family: var(--font-lora-bold);
+  }
+
+  .description-mariachi {
+    font-family: var(--font-lato-regular);
+    font-size: 23px;
+    font-weight: normal;
+  }
+  .title-bold-lato {
+    font-family: var(--font-lato-bold);
+  }
+}
+
+.cta-button button {
+  background: transparent;
+  border-radius: 100px;
+  border: 1.5px solid var(--gold-color);
+  color: var(--white-color);
+  font-family: var(--font-lato-regular);
+  font-size: 1.2rem;
+  padding: 5px 20px;
+  transition: .3s ease all;
+  &:hover {
+    background: var(--gold-color);
+  }
+}
+
+.link-more span {
+  font-family: var(--font-lato-regular);
+  font-size: 1.1rem;
+}
+
+.hero-image img {
+  width: 450px;
+  max-width: 100%;
+}
+/* Section Banner End */
+
+/* Section Aboutus Start */
+.about-image img {
+  width: 750px;
+  max-width: 100%;
+}
+
+.about-titles-container {
+  img {
+    width: 30px;
+    max-width: 100%;
+  }
+  h2 {
+    font-family: var(--font-lora-semibold);
+    text-transform: uppercase;
+    font-size: 50px;
+    color: var(--gold-color);
+  }
+  p {
+    font-family: var(--font-lato-semibold);
+    font-size: 26px;
+    color: var(--gold-color);
+  }
+}
+.about-description-container {
+  p {
+    font-family: var(--font-lato-regular);
+    font-size: 20px;
+    max-width: 90%;
+    .text-bold {
+      font-family: var(--font-lato-bold);
+    }
+  }
+}
+/* Section Aboutus End */
+
+/* Section Moreinfo Start */
+.section-more-info {
+  background-image: url(../../../assets/images/home/img_know-more.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .more-info-content {
+    height: 650px;
+  }
+  .titles-info {
+    p {
+      font-family: var(--font-lato-semibold);
+      font-size: 22px;
+      color: var(--gold-color);
+    }
+    h3 {
+      font-family: var(--font-lato-bold);
+      font-size: 35px;
+    }
+  }
+  .description-info {
+    max-width: 55%;
+    p {
+      font-family: var(--font-lato-regular);
+      font-size: 18px;
+    }
+  }
+}
+/* Section Moreinfo End */
+
+/* Section Services Start */
+.section-services {
+  background-color: var(--soft-black);
+  transition: .5s ease all;
+  .titles-services {
+    h3 {
+      font-family: var(--font-lato-semibold);
+      color: var(--gold-color);
+      font-size: 35px;
+    }
+    p {
+      color: var(--white-color);
+      font-family: var(--font-lato-regular);
+      font-size: 18px;
+      max-width: 56%;
+    }
+  }
+}
+
+.item-card_image {
+  border-radius: 10px;
+  width: 135px;
+  height: 135px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image1::before {
+  background-image: url(../../../assets/images/home/services/img-weddings.png);
+}
+
+.image2::before {
+  background-image: url(../../../assets/images/home/services/img_celebrations.png);
+}
+.image3::before {
+  background-image: url(../../../assets/images/home/services/img_xv.png);
+}
+.image4::before {
+  background-image: url(../../../assets/images/home/services/img_birthdays.png);
+}
+.image5::before {
+  background-image: url(../../../assets/images/home/services/img_cepelios.png);
+}
+.image6::before {
+  background-image: url(../../../assets/images/home/services/img_campaings.png);
+}
+.image7::before {
+  background-image: url(../../../assets/images/home/services/img_surprises.png);
+}
+.image8::before {
+  background-image: url(../../../assets/images/home/services/img_familiars.png);
+}
+
+
+.item-card_image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .4s ease all;
+  z-index: 0;
+}
+
+.item-card_image:hover::before {
+  filter: blur(2px) brightness(75%);
+  background-size: 140px;
+  transition: .4s ease all;
+}
+
+.item-card_image h3 {
+  color: var(--white-color);
+  font-family: var(--font-lato-semibold);
+  font-size: 18px;
+  margin: 0;
+  transition: .2s ease all;
+  position: absolute; /* Para posicionarlo sobre la imagen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Para centrar el texto */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+/* Section Services End */
+
+/* Section Quote Start */
+.quote-container {
+  .quote-img img {
+    width: 350px;
+  }
+  .quote-content h4 {
+    font-family: var(--font-hijrnotes);
+    font-size: 45px;
+    color: var(--gold-color);
+  }
+}
+/* Section Quote End */
+
+/* Section Gallery Start  */
+.titles-gallery {
+  p {
+    font-family: var(--font-lato-semibold);
+    font-size: 22px;
+    color: var(--gold-color);
+  }
+  h3 {
+    font-family: var(--font-lato-bold);
+    font-size: 35px;
+  }
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* Section Gallery End  */
+
+
+/* Section Banner Start  */
+.section-banner {
+  background-color: var(--gold-color);
+  height: 60px;
+  .banner-container h4 {
+    font-family: var(--font-lato-regular);
+    font-size: 22px;
+    color: var(--white-color);
+  }
+}
+/* Section Banner End  */
+
+/* Section Contact Start */
+
+.title-contact {
+  font-family: var(--font-lato-regular);
+  font-size: 30px;
+  max-width: 90%;
+}
+.text-bold-contact {
+  font-family: var(--font-lato-semibold);
+}
+
+.map-container {
+  iframe {
+    border-radius: 10px;
+    max-width: 100%;
+    /* filter: brightness(0.5); */
+    filter: opacity(0.4);
+  }
+  .data-container {
+    border-radius: 10px;
+    background: var(--soft-black);
+    position: absolute;
+    z-index: 5;
+    width: 490px;
+  }
+}
+
+.title-data-contact {
+  font-family: var(--font-lato-regular);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.desc-data-contact {
+  font-family: var(--font-lato-regular);
+  font-size: 17px;
+}
+
+.link-contact {
+  color: var(--gold-color);
+}
+
+.form-label {
+  font-family: var(--font-lato-regular);
+}
+
+.form-control:focus {
+  border-color: var(--gold-color);
+  box-shadow: 0 0 0 0.25rem rgba(201, 165, 123, 0.5);
+}
+
+button.btn.btn-primary {
+  padding: 0.7rem 1rem;
+}
+.btn-primary,
+.btn-primary:active {
+  background: var(--gold-color);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-family: var(--font-lato-semibold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: var(--gold-color);
+  transition: all .2s ease;
+}
+.btn-primary:hover {
+  background: var(--color-sienna-100);
+}
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(201, 165, 123, 0.5);
+}
+/* Section Contact End */
+
+/* Section Methods Start */
+.img-method {
+  width: 50px;
+  height: 50px;
+}
+/* Section Methods End */
+
+
+
+/* Mobile Styles Start */
+@media (max-width: 575.98px) {
+  .section-hero-banner {
+    padding-top: 4.5em;
+  }
+
+  .hero-content {
+    .title-mariachi {
+      font-size: 32px;
+    }
+
+    .description-mariachi {
+      font-size: 21px;
+    }
+  }
+
+  .link-more span {
+    font-size: 1.2rem;
+  }
+
+  .hero-image img {
+    width: 410px;
+    max-width: 110%;
+  }
+
+  .about-titles-container {
+    h2 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  .about-description-container {
+    p {
+      font-size: 21px;
+      max-width: 100%;
+    }
+  }
+
+  .section-more-info {
+    background-position: left;
+    .description-info {
+      max-width: 100%;
+      p {
+        font-size: 21px;
+      }
+    }
+  }
+
+
+  .section-services {
+    .titles-services {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+
+
+  .quote-container {
+    .quote-content h4 {
+      font-size: 38px;
+    }
+  }
+
+
+  .titles-gallery {
+    p {
+      font-family: var(--font-lato-semibold);
+      font-size: 22px;
+      color: var(--gold-color);
+    }
+    h3 {
+      font-family: var(--font-lato-bold);
+      font-size: 33px;
+    }
+  }
+
+
+  .section-banner {
+    height: 60px;
+    .banner-container h4 {
+      font-size: 18px;
+    }
+  }
+
+
+  .title-contact {
+    font-size: 28px;
+    max-width: 100%;
+  }
+  .map-container {
+    .data-container {
+      width: 375px;
+    }
+  }
+
+
+
+  .img-method {
+    width: 35px;
+    height: 35px;
+  }
+
+
+
+
+}
