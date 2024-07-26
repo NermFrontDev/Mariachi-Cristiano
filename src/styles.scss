@@ -1,3 +1,36 @@
+:root {
+  /* fonts */
+  --font-lato-regular: Lato;
+  --font-lato-semibold: Lato-semibold;
+  --font-lato-bold: Lato-bold;
+  --font-lora: Lora;
+  --font-lora-semibold: Lora-semibold;
+  --font-lora-bold: Lora-bold;
+  --font-hijrnotes: Hijrnotes;
+
+  /* Colors */
+  --soft-gray-color: #efefef;
+  --color-white: #fff;
+  --color-gray-100: rgba(6, 6, 6, 0.5);
+  --gold-color: #c9a57b;
+  --color-sienna-100: #967347;
+  --color-dimgray: #656565;
+  --color-silver: #b6b6b6;
+  --soft-black: #2e2e2e;
+
+  /* font sizes */
+  --font-size-lg: 18px;
+  --font-size-23xl: 42px;
+  --font-size-11xl: 30px;
+  --font-size-3xl: 22px;
+  --font-size-5xl: 24px;
+  --font-size-mid: 17px;
+  --font-size-9xl: 28px;
+  --font-size-26xl: 45px;
+  --font-size-17xl: 36px;
+  --font-size-8xl: 27px;
+}
+
 /* <--- Fonts ---> */
 /* Lato Font */
 @font-face {
@@ -29,41 +62,6 @@
 @font-face {
   font-family: Hijrnotes;
   src: url(assets/Fonts/Hijrnotes/Hijrnotes_PERSONAL_USE_ONLY.woff);
-}
-
-:root {
-  /* fonts */
-  --font-lato-regular: Lato;
-  --font-lato-semibold: Lato-semibold;
-  --font-lato-bold: Lato-bold;
-  --font-lora: Lora;
-  --font-lora-semibold: Lora-semibold;
-  --font-lora-bold: Lora-bold;
-  --font-hijrnotes: Hijrnotes;
-
-  /* Colors */
-  --soft-gray-color: #efefef;
-  --color-white: #fff;
-  --color-gray-100: rgba(6, 6, 6, 0.5);
-  --gold-color: #c9a57b;
-  --color-sienna-100: #967347;
-  --color-dimgray: #656565;
-  --color-silver: #b6b6b6;
-  --soft-black: #2e2e2e;
-
-  /* font sizes */
-  --font-size-lg: 18px;
-  --font-size-23xl: 42px;
-  --font-size-6xl: 25px;
-  --font-size-xl: 20px;
-  --font-size-11xl: 30px;
-  --font-size-3xl: 22px;
-  --font-size-5xl: 24px;
-  --font-size-mid: 17px;
-  --font-size-9xl: 28px;
-  --font-size-26xl: 45px;
-  --font-size-17xl: 36px;
-  --font-size-8xl: 27px;
 }
 
 body {
