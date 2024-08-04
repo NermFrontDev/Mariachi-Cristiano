@@ -23,6 +23,11 @@
   font-family: var(--font-lato);
   font-weight: 600;
   text-transform: uppercase;
+  img {
+    width: 50px;
+    height: auto;
+    filter: invert(1);
+  }
 }
 
 .img-icon {
