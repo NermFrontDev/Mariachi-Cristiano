@@ -189,18 +189,17 @@
         <div class="d-flex flex-column align-items-center justify-content-between gap-4 py-4 col-10 col-lg-12">
           <div class="col-10 col-lg-11 d-flex flex-column gap-2">
             <h5 class="m-0 title-data-contact">Dirección</h5>
-            <p class="m-0 desc-data-contact">Priv. Reforma 103 Presidente Juarez,
-              Oaxaca de Juarez, Oaxaca C.P. 68146</p>
+            <p class="m-0 desc-data-contact">{{ addressMariachi }}</p>
           </div>
           <div class="d-flex flex-column flex-lg-row align-items-start gap-4 col-10 col-lg-11">
             <div class="d-flex flex-column gap-2">
               <h5 class="m-0 title-data-contact">Teléfono</h5>
-              <p class="m-0 desc-data-contact">951-161-7127</p>
+              <p class="m-0 desc-data-contact">{{ phoneMariachi }}</p>
             </div>
             <div class="d-flex flex-column gap-2">
               <h5 class="m-0 title-data-contact">Correo Electrónico</h5>
-              <a class="link-contact" [routerLink]="['/']">
-                <p class="m-0 desc-data-contact">davidhernandezmesinas79@gmail.com</p>
+              <a class="link-contact" href="mailto:{{ emailMariachi }}">
+                <p class="m-0 desc-data-contact">{{ emailMariachi }}</p>
               </a>
             </div>
           </div>

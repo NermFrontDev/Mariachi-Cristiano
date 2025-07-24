@@ -104,4 +104,9 @@ export class HomeComponent {
     }
   ]
 
+  /* Contact Info */
+  emailMariachi: string = 'davidhernandezmesinas79@gmail.com';
+  phoneMariachi: string = '951-161-7127';
+  addressMariachi: string = 'Priv. Reforma 103 Presidente Juarez, Oaxaca de Juarez, Oaxaca C.P. 68146';
+
 }

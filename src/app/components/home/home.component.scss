@@ -55,6 +55,7 @@
 .about-image img {
   width: 750px;
   max-width: 100%;
+  filter: contrast(1.1);
 }
 
 .about-titles-container {
@@ -210,6 +211,7 @@
 .quote-container {
   .quote-img img {
     width: 350px;
+    filter: contrast(1.1);
   }
   .quote-content h4 {
     font-family: var(--font-hijrnotes);
