@@ -83,23 +83,23 @@ export class HomeComponent {
 
   data: Item[] = [
     {
-      imageSrc: `${this.imgUrl}/img_1.png`,
+      imageSrc: `${this.imgUrl}/img_1.webp`,
       imageAlt: '1'
     },
     {
-      imageSrc: `${this.imgUrl}/img_2.png`,
+      imageSrc: `${this.imgUrl}/img_2.webp`,
       imageAlt: '2'
     },
     {
-      imageSrc: `${this.imgUrl}/img_3.png`,
+      imageSrc: `${this.imgUrl}/img_3.webp`,
       imageAlt: '3'
     },
     {
-      imageSrc: `${this.imgUrl}/img_4.png`,
+      imageSrc: `${this.imgUrl}/img_4.webp`,
       imageAlt: '4'
     },
     {
-      imageSrc: `${this.imgUrl}/img_5.png`,
+      imageSrc: `${this.imgUrl}/img_5.webp`,
       imageAlt: '5'
     }
   ]
