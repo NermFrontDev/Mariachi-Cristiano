@@ -3,6 +3,7 @@
 /* Section Banner Start */
 .section-hero-banner {
   padding-top: 3.5em;
+  height: 105vh;
 }
 
 .hero-content {
@@ -11,6 +12,7 @@
     font-family: var(--font-lora);
     font-size: 58px;
     font-weight: 100;
+    -webkit-font-smoothing: antialiased;
   }
   .title-bold {
     font-family: var(--font-lora-bold);
@@ -46,12 +48,18 @@
 }
 
 .hero-image img {
-  width: 450px;
+  /* width: 450px; */
+  width: 100%;
   max-width: 100%;
+  /* filter: contrast(1.1); */
+  mask-image: linear-gradient(to bottom,black 70%,transparent 100%);
 }
 /* Section Banner End */
 
 /* Section Aboutus Start */
+section#about-us {
+  height: 100vh;
+}
 .about-image img {
   width: 750px;
   max-width: 100%;
@@ -120,7 +128,9 @@
 /* Section Services Start */
 .section-services {
   background-color: var(--soft-black);
+  height: 90vh;
   transition: .5s ease all;
+  display: flex;
   .titles-services {
     h3 {
       font-family: var(--font-lato-semibold);
@@ -212,11 +222,18 @@
   .quote-img img {
     width: 350px;
     filter: contrast(1.1);
+    mask-image: linear-gradient(to bottom,black 90%,transparent 100%);
   }
   .quote-content h4 {
     font-family: var(--font-hijrnotes);
     font-size: 45px;
     color: var(--gold-color);
+  }
+  .font-author {
+    font-family: var(--font-lora);
+    font-size: 22px;
+    color: var(--gold-color);
+    letter-spacing: 1px;
   }
 }
 /* Section Quote End */
@@ -358,8 +375,8 @@ button.btn.btn-primary {
   }
 
   .hero-image img {
-    width: 410px;
-    max-width: 110%;
+    width: 370px;
+    max-width: 100%;
   }
 
   .about-titles-container {

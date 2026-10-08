@@ -7,6 +7,7 @@
   --font-lora-semibold: Lora-semibold;
   --font-lora-bold: Lora-bold;
   --font-hijrnotes: Hijrnotes;
+  --font-author: FairProsper;
 
   /* Colors */
   --soft-gray-color: #efefef;
@@ -62,6 +63,11 @@
 @font-face {
   font-family: Hijrnotes;
   src: url(assets/Fonts/Hijrnotes/Hijrnotes_PERSONAL_USE_ONLY.woff);
+}
+/* Fair Prosper */
+@font-face {
+  font-family: FairProsper;
+  src: url(assets/Fonts/Fair-Prosper/Fair-Prosper.woff);
 }
 
 body {

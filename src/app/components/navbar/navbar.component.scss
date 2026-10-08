@@ -98,6 +98,7 @@
 
     .navlink.active{
       color: var(--gold-color);
+      text-shadow: 0px 2px 4px #1c1c1c;
       /* font-family: var(--font-lora-bold); */
     }
     .navlink.active::after {

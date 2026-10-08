@@ -1,9 +1,9 @@
 <!-- Hero-Banner Section Start -->
 <section class="section-hero-banner" id="hero-banner" appIntersectionObserver
   (visible)="onSectionVisible('hero-banner', $event)">
-  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between mb-5">
     <div
-      class="hero-content d-flex flex-column align-items-lg-start align-items-center justify-content-center gap-3 col">
+      class="hero-content d-flex flex-column align-items-lg-start align-items-center justify-content-center gap-3 col mt-5 mt-lg-0">
       <div>
         <h1 class="title-mariachi text-lg-start text-center">MARIACHI <span class="title-bold">CRISTIANO CÁNTICOS AL
             REY</span><br> DE OAXACA</h1>
@@ -24,8 +24,9 @@
         </a>
       </div>
     </div>
-    <div class="hero-image col-lg-6 col-12 text-center">
-      <img src="assets/images/home/img_hero-banner.png" alt="Mariachi hero-banner image">
+    <div class="hero-image col-lg-6 col-12 text-center mt-5">
+      <img src="assets/images/home/hero-mariachi.png" alt="Mariachi hero-banner image">
+      <!-- <img src="assets/images/home/img_hero-banner.png" alt="Mariachi hero-banner image"> -->
     </div>
   </div>
 </section>
@@ -144,13 +145,14 @@
 <!-- Quote Section Start -->
 <section class="container-fluid section-quote py-5" id="quote">
   <div
-    class="container quote-container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between pt-5 col-lg-8">
+    class="container quote-container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between pt-5 col-lg-9">
     <div class="quote-img text-center">
-      <img src="assets/images/home/img_quote.png" alt="Quote image">
+      <img src="assets/images/home/img_david.png" alt="Quote image">
     </div>
     <div class="quote-content text-center text-lg-end col-lg-8">
       <h4>"Compartimos nuestra pasión por la música y nuestra fe, llevando alegría y esperanza a cada celebración con
         nuestro mariachi cristiano."</h4>
+        <span class="d-block mt-4 font-author">David Hernández</span>
     </div>
   </div>
 </section>
@@ -244,6 +246,8 @@
         <div class="d-grid">
           <button class="btn btn-primary" type="submit" [disabled]="contactForm.invalid">Enviar</button>
         </div>
+        <div class="g-recaptcha" data-sitekey="6LfgAOMtAAAAAOoA1D2rIHoUIejd7LoKQbfSKV0m" data-action="LOGIN"></div>
+        <!-- <input type="submit" value="Submit"> -->
       </form>
     </div>
   </div>
