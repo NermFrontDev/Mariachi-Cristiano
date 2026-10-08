@@ -98,7 +98,7 @@ section#about-us {
 /* Section Moreinfo Start */
 .section-more-info {
   background-image: radial-gradient(circle at 50% 15%, rgba(26, 32, 39, 0.949) 0%, #080b0ee9 100%),
-    url(../../../assets/images/home/img_bg-services.png);
+    url(../../../assets/images/home/img_bg-services.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -327,28 +327,28 @@ section#about-us {
 
     // Specific Card Backgrounds
     &.card-weddings .card-bg {
-      background-image: url(../../../assets/images/home/services/img-weddings.png);
+      background-image: url(../../../assets/images/home/services/img_weddings.webp);
     }
     &.card-celebrations .card-bg {
-      background-image: url(../../../assets/images/home/services/img_celebrations.png);
+      background-image: url(../../../assets/images/home/services/img_celebrations.webp);
     }
     &.card-xv .card-bg {
-      background-image: url(../../../assets/images/home/services/img_xv.png);
+      background-image: url(../../../assets/images/home/services/img_xv.webp);
     }
     &.card-birthdays .card-bg {
-      background-image: url(../../../assets/images/home/services/img_birthdays.png);
+      background-image: url(../../../assets/images/home/services/img_birthdays.webp);
     }
     &.card-cepellos .card-bg {
-      background-image: url(../../../assets/images/home/services/img_cepelios.png);
+      background-image: url(../../../assets/images/home/services/img_cepelios.webp);
     }
     &.card-campaigns .card-bg {
-      background-image: url(../../../assets/images/home/services/img_campaings.png);
+      background-image: url(../../../assets/images/home/services/img_campaings.webp);
     }
     &.card-surprises .card-bg {
-      background-image: url(../../../assets/images/home/services/img_surprises.png);
+      background-image: url(../../../assets/images/home/services/img_surprises.webp);
     }
     &.card-familiars .card-bg {
-      background-image: url(../../../assets/images/home/services/img_familiars.png);
+      background-image: url(../../../assets/images/home/services/img_familiars.webp);
     }
   }
 }
