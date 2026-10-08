@@ -78,63 +78,176 @@
 <!-- Services Section Start -->
 <section class="section-services container-fluid py-5" id="services" appIntersectionObserver
   (visible)="onSectionVisible('services', $event)">
-  <div class="container my-5 d-flex flex-column align-items-center justify-content-center gap-5">
-    <div class="titles-services d-flex flex-column align-items-center justify-content-center gap-3">
-      <h3 class="m-0  text-start text-lg-center">Eventos cristianos que cubrimos</h3>
-      <p class="m-0 text-start text-lg-center">La cobertura de nuestros servicios es a nivel nacional, podemos ir a
-        cualquier punto dentro y afuera de la ciudad. Manejamos diferentes paquetes de acuerdo con tus necesidades.
-        ¡Pregunta por ellos!</p>
+  <div class="container my-3">
+    <div class="services-header">
+      <span class="kicker">NUESTROS</span>
+      <h2 class="main-title">Eventos cristianos <span class="highlight">que cubrimos</span></h2>
+      <p class="description">
+        La cobertura de nuestros servicios es a nivel nacional, podemos ir a cualquier punto dentro y afuera de la ciudad. Manejamos diferentes paquetes de acuerdo con tus necesidades.
+      </p>
+      <div class="callout">¡Pregunta por ellos!</div>
     </div>
-    <div
-      class="items-services d-flex flex-row flex-wrap align-items-center justify-content-center justify-content-lg-between gap-4 col-12 col-lg-6 gap-lg-3">
-      <!-- First Column -->
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image1 d-flex align-items-center justify-content-center">
-          <h3>Bodas</h3>
+
+    <div class="services-grid">
+      <!-- 1. Bodas -->
+      <a href="#contact" class="service-card card-weddings">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="14" r="5"/>
+              <circle cx="15" cy="10" r="5"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">Bodas</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image2 d-flex align-items-center justify-content-center">
-          <h3>Celebraciones</h3>
+
+      <!-- 2. Celebraciones -->
+      <a href="#contact" class="service-card card-celebrations">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5.8 11.3 2 22l10.7-3.8L5.8 11.3z"/>
+              <path d="m4 16 4.3 1.5"/>
+              <path d="m7 11 2.3 2.3"/>
+              <path d="M11 13l2.3 2.3"/>
+              <path d="M19 2l.7 1.9L21.6 4.6l-1.9.7L19 7.2l-.7-1.9L16.4 4.6l1.9-.7L19 2z"/>
+              <path d="M22 13h-2"/>
+              <path d="M14 5V3"/>
+              <path d="m17 9 1.5-1.5"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">Celebraciones</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image3 d-flex align-items-center justify-content-center">
-          <h3>XV Años</h3>
+
+      <!-- 3. XV Años -->
+      <a href="#contact" class="service-card card-xv">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 19h20v2H2z"/>
+              <path d="m2 19 3-12 5 6 4-9 4 9 4-6 2 12H2z"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">XV Años</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image4 d-flex align-items-center justify-content-center">
-          <h3>Cumpleaños</h3>
+
+      <!-- 4. Cumpleaños -->
+      <a href="#contact" class="service-card card-birthdays">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7"/>
+              <path d="M4 17h16"/>
+              <path d="M12 8v4"/>
+              <path d="M8 8v4"/>
+              <path d="M16 8v4"/>
+              <circle cx="12" cy="4" r="1" fill="currentColor"/>
+              <circle cx="8" cy="4" r="1" fill="currentColor"/>
+              <circle cx="16" cy="4" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">Cumpleaños</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
-      <!-- Second Column -->
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image5 d-flex align-items-center justify-content-center">
-          <h3>Cepelios</h3>
+
+      <!-- 5. Cepellos -->
+      <a href="#contact" class="service-card card-cepellos">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4"/>
+              <path d="M10 4h4"/>
+              <path d="m4 11 8-5 8 5v10H4V11z"/>
+              <path d="M10 21v-5a2 2 0 0 1 4 0v5"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">Cepellos</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image6 d-flex align-items-center justify-content-center">
-          <h3>Campañas</h3>
+
+      <!-- 6. Campañas -->
+      <a href="#contact" class="service-card card-campaigns">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 11 18-5v12L3 13v-2z"/>
+              <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/>
+              <path d="M21 8v8"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">Campañas</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image7 d-flex align-items-center justify-content-center">
-          <h3>Sorpresas</h3>
+
+      <!-- 7. Sorpresas -->
+      <a href="#contact" class="service-card card-surprises">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 18V5l12-2v13"/>
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="16" r="3"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">Sorpresas</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
-      <a
-        class="link-service text-white text-decoration-none d-flex flex-column align-items-center justify-content-center">
-        <div class="item-card_image image8 d-flex align-items-center justify-content-center">
-          <h3>Convivios Familiares</h3>
+
+      <!-- 8. Convivios Familiares -->
+      <a href="#contact" class="service-card card-familiars">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <h3 class="service-title">Convivios<br>Familiares</h3>
+            <span class="service-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
         </div>
       </a>
     </div>
