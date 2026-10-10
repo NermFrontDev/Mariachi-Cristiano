@@ -258,11 +258,11 @@
 <!-- Quote Section Start -->
 <section class="container-fluid section-quote py-5" id="quote">
   <div
-    class="container quote-container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between pt-5 col-lg-9">
+    class="container quote-container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between justify-content-lg-end pt-5 col-lg-9">
     <div class="quote-img text-center">
-      <img src="assets/images/home/img_david.webp" alt="Quote image">
+      <img src="assets/images/home/color-graded-1.png" alt="Quote image">
     </div>
-    <div class="quote-content text-center text-lg-end col-lg-8">
+    <div class="quote-content text-center text-lg-end col-lg-7 pe-5">
       <h4>"Compartimos nuestra pasión por la música y nuestra fe, llevando alegría y esperanza a cada celebración con
         nuestro mariachi cristiano."</h4>
         <span class="d-block mt-4 font-author">David Hernández</span>
@@ -280,10 +280,20 @@
     <h3 class="m-0">Nuestras participaciones en eventos</h3>
   </div>
   <!-- class="container" -->
-  <app-gallery-lightbox
-    [galleryData]="data"
-    [showCount]="true">
-  </app-gallery-lightbox>
+  <div class="gallery-grid">
+    <div
+      class="gallery-item"
+      *ngFor="let photo of photos"
+      [ngClass]="'size-' + photo.size"
+    >
+      <img
+        [src]="photo.src"
+        [alt]="photo.alt"
+        loading="lazy"
+        draggable="false"
+      />
+    </div>
+  </div>
 </section>
 <!-- Gallery Section End -->
 

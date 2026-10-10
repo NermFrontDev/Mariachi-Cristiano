@@ -3,9 +3,10 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
-interface Item {
-  imageSrc: string;
-  imageAlt: string;
+interface GalleryPhoto {
+  src: string;
+  alt: string;
+  size: string;
 }
 
 @Component({
@@ -45,6 +46,19 @@ export class HomeComponent {
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required]]
     });
+
+    this.photos = this.shuffle(this.photos).slice(0, 20);
+  }
+
+  private shuffle<T>(items: T[]): T[] {
+    const result = [...items];
+
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+
+    return result;
   }
 
   onSubmit(): void {
@@ -79,30 +93,30 @@ export class HomeComponent {
       this.router.navigate(['/']);
     }, 2000);
   }
-  imgUrl: string = 'assets/images/home/img-gallery';
+  imgUrl: string = 'assets/images/gallery';
 
-  data: Item[] = [
-    {
-      imageSrc: `${this.imgUrl}/img_1.webp`,
-      imageAlt: '1'
-    },
-    {
-      imageSrc: `${this.imgUrl}/img_2.webp`,
-      imageAlt: '2'
-    },
-    {
-      imageSrc: `${this.imgUrl}/img_3.webp`,
-      imageAlt: '3'
-    },
-    {
-      imageSrc: `${this.imgUrl}/img_4.webp`,
-      imageAlt: '4'
-    },
-    {
-      imageSrc: `${this.imgUrl}/img_5.webp`,
-      imageAlt: '5'
-    }
-  ]
+  photos: GalleryPhoto[] = [
+    { src: `${this.imgUrl}/img_1.webp`, alt: 'Foto 1', size: 'tall' },
+    { src: `${this.imgUrl}/img_2.webp`, alt: 'Foto 2', size: 'wide' },
+    { src: `${this.imgUrl}/img_3.webp`, alt: 'Foto 3', size: 'normal' },
+    { src: `${this.imgUrl}/img_4.webp`, alt: 'Foto 4', size: 'big' },
+    { src: `${this.imgUrl}/img_5.webp`, alt: 'Foto 5', size: 'normal' },
+    { src: `${this.imgUrl}/img_6.webp`, alt: 'Foto 6', size: 'tall' },
+    { src: `${this.imgUrl}/img_7.webp`, alt: 'Foto 7', size: 'normal' },
+    { src: `${this.imgUrl}/img_8.webp`, alt: 'Foto 8', size: 'wide' },
+    { src: `${this.imgUrl}/img_9.webp`, alt: 'Foto 9', size: 'normal' },
+    { src: `${this.imgUrl}/img_10.webp`, alt: 'Foto 10', size: 'big' },
+    { src: `${this.imgUrl}/img_11.webp`, alt: 'Foto 11', size: 'normal' },
+    { src: `${this.imgUrl}/img_12.webp`, alt: 'Foto 12', size: 'tall' },
+    { src: `${this.imgUrl}/img_13.webp`, alt: 'Foto 13', size: 'normal' },
+    { src: `${this.imgUrl}/img_14.webp`, alt: 'Foto 14', size: 'wide' },
+    { src: `${this.imgUrl}/img_15.webp`, alt: 'Foto 15', size: 'normal' },
+    { src: `${this.imgUrl}/img_16.webp`, alt: 'Foto 16', size: 'big' },
+    { src: `${this.imgUrl}/img_17.webp`, alt: 'Foto 17', size: 'normal' },
+    { src: `${this.imgUrl}/img_18.webp`, alt: 'Foto 18', size: 'tall' },
+    { src: `${this.imgUrl}/img_19.webp`, alt: 'Foto 19', size: 'normal' },
+    { src: `${this.imgUrl}/img_20.webp`, alt: 'Foto 20', size: 'wide' }
+  ];
 
   /* Contact Info */
   emailMariachi: string = 'davidhernandezmesinas79@gmail.com';
